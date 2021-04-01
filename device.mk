@@ -162,6 +162,11 @@ PRODUCT_PACKAGES += \
     OnePlusParts \
 	parts.rc
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.0-service.oneplus_denniz \
+    vendor.qti.hardware.display.mapper@1.1.vendor
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
