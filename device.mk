@@ -74,6 +74,10 @@ PRODUCT_PACKAGES += \
     init.mt6893.rc \
     fstab.mt6893
 
+# Copy the kernel from the prebuilts directory.
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/Image.gz:kernel
+
 # Screen density
 PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
