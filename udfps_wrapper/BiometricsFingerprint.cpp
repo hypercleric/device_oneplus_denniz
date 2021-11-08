@@ -25,7 +25,6 @@
 #include <thread>
 
 #define FOD_STATUS_PATH "/sys/kernel/oppo_display/oppo_notify_fppress"
-#define DIMLAYER_PATH "/sys/kernel/oppo_display/dimlayer_bl_en"
 #define STATUS_ON 1
 #define STATUS_OFF 0
 #define BIND(fn) [this](auto&&... args) -> decltype(auto) { return this->fn(std::forward<decltype(args)>(args)...); }
@@ -185,7 +184,6 @@ void BiometricsFingerprint::setFingerprintScreenState(const bool on) {
         on ? vendor::oplus::hardware::biometrics::fingerprint::V2_1::FingerprintScreenState::FINGERPRINT_SCREEN_ON :
             vendor::oplus::hardware::biometrics::fingerprint::V2_1::FingerprintScreenState::FINGERPRINT_SCREEN_OFF
         );
-    set(DIMLAYER_PATH, on ? STATUS_ON: STATUS_OFF);
 }
 
 void BiometricsFingerprint::setFingerprintScreenStateOff() {
@@ -237,7 +235,7 @@ Return<RequestStatus> BiometricsFingerprint::authenticate(uint64_t operationId, 
     if (status == RequestStatus::SYS_OK) {
         setFingerprintScreenState(true);
     }
-    return OplusToAOSPRequestStatus(mOplusBiometricsFingerprint->authenticate(operationId, gid));
+    return status; 
 }
 
 Return<bool> BiometricsFingerprint::isUdfps(uint32_t) { return true; }
