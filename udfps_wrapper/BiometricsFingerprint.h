@@ -64,9 +64,9 @@ struct BiometricsFingerprint : public IBiometricsFingerprint {
 
 private:
     bool isEnrolling;
-    sp<vendor::oplus::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint> mOppoBiometricsFingerprint;
-    sp<vendor::oplus::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprintClientCallback> mOppoClientCallback;
-    static Return<RequestStatus> OppoToAOSPRequestStatus(vendor::oplus::hardware::biometrics::fingerprint::V2_1::RequestStatus req);
+    sp<vendor::oplus::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint> mOplusBiometricsFingerprint;
+    sp<vendor::oplus::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprintClientCallback> mOplusClientCallback;
+    static Return<RequestStatus> OplusToAOSPRequestStatus(vendor::oplus::hardware::biometrics::fingerprint::V2_1::RequestStatus req);
 };
 
 }  // namespace implementation
