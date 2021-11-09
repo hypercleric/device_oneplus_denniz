@@ -32,6 +32,7 @@ PRODUCT_MODEL := Realme X7 Max 5G
 PRODUCT_MANUFACTURER := realme
 
 TARGET_BOOT_ANIMATION_RES := 1080
+VANILLA_BUILD := true
 
 # Build info
 BUILD_FINGERPRINT := "alps/vnd_oppo6893/oppo6893:11/RP1A.200720.011/mp2tc16sppr5V1:user/release-keys"
