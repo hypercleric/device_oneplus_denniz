@@ -98,6 +98,11 @@ PRODUCT_PACKAGES += \
     RcsService \
     PresencePolling
 
+# RealmeParts
+PRODUCT_PACKAGES += \
+    RealmeParts \
+	parts.rc
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
