@@ -29,6 +29,10 @@
     <!-- Required to enable dnd during game mode -->
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
 
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="30" />
+
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
     <application
