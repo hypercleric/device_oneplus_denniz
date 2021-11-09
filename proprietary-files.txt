@@ -9,3 +9,10 @@ lib64/libaptXHD_encoder.so
 -priv-app/ImsService/ImsService.apk
 bin/vtservice
 etc/init/init.vtservice.rc
+
+# Hotword Google
+-priv-app\HotwordEnrollmentOKGoogleRISCV.apk
+framework\com.android.hotwordenrollment.common.util.jar
+framework\com.android.hotwordenrollment.common.util.impl.jar
+etc\permissions\com.android.hotwordenrollment.okgoogle.xml
+etc\permissions\com.android.hotwordenrollment.common.util.xml
