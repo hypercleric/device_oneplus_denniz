@@ -87,8 +87,8 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.RMX3031
 
 # NFC
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/nxp/opensource/sn100x
+#PRODUCT_SOONG_NAMESPACES += \
+#    vendor/nxp/opensource/sn100x
 
 PRODUCT_PACKAGES += \
     NfcNci \
