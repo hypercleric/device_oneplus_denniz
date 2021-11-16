@@ -31,8 +31,17 @@ PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme X7 Max 5G
 PRODUCT_MANUFACTURER := realme
 
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+ANCIENT_GAPPS := true
+
+# Official-ify
+ANCIENT_OFFICIAL=true
+TARGET_USES_BLUR := true
+
 TARGET_BOOT_ANIMATION_RES := 1080
-VANILLA_BUILD := true
+
 
 # Build info
 BUILD_FINGERPRINT := "alps/vnd_oppo6893/oppo6893:11/RP1A.200720.011/mp2tc16sppr5V1:user/release-keys"
