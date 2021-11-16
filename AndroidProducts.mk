@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cipher_RMX3031.mk
+    $(LOCAL_DIR)/ancient_RMX3031.mk

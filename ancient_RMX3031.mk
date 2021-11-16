@@ -22,10 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/RMX3031/device.mk)
 
 # Inherit some common Pixel-Experience stuff.
-$(call inherit-product, vendor/cipher/config/common_full_phone.mk)
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := cipher_RMX3031
+PRODUCT_NAME := ancient_RMX3031
 PRODUCT_DEVICE := RMX3031
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme X7 Max 5G
