@@ -1,5 +1,6 @@
 type hal_fingerprint_RMX3031, domain;
 typeattribute hal_fingerprint_RMX3031 data_between_core_and_vendor_violators;
+typeattribute hal_fingerprint_RMX3031 vendor_executes_system_violators;
 hal_client_domain(hal_fingerprint_RMX3031, hal_fingerprint)
 hal_server_domain(hal_fingerprint_RMX3031, hal_fingerprint)
 
