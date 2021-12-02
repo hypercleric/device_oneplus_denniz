@@ -116,10 +116,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nxp.conf
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-aosp
-
+PRODUCT_PACKAGES += \
+    FrameworkResOverlay \
+    SystemUIOverlay \
+	SettingsOverlay \
+	TelephonyOverlay \
+	
 # MTK IMS Overlays
 PRODUCT_PACKAGES += \
     mtk-ims \
