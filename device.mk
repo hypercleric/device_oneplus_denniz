@@ -141,8 +141,7 @@ PRODUCT_PACKAGES += \
 # RealmeParts
 PRODUCT_PACKAGES += \
     RealmeParts \
-	parts.rc \
-	RealmeDirac
+	parts.rc
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
