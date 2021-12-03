@@ -120,7 +120,8 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlay \
     SystemUIOverlay \
 	SettingsOverlay \
-	TelephonyOverlay
+	TelephonyOverlay \
+	SettingsLibOverlay
 
 # Enforce RRO targets
 PRODUCT_ENFORCE_RRO_TARGETS := *
