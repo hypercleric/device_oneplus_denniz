@@ -119,6 +119,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nxp.conf
 
+PRODUCT_PACKAGES += \
+    OPFiles
+	
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/OPFiles/privapp-permissions-op-files.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-op-files.xml \
+
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlay \
