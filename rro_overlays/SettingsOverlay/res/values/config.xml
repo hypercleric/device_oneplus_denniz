@@ -23,15 +23,5 @@
 
     <!-- Whether to show Smooth Display feature in Settings Options -->
     <bool name="config_show_smooth_display">true</bool>
-	
-	<!-- AncientOS Device Info -->
-    <string name="ancient_device_name_summary">Realme X7 Max 5G</string>
-    <string name="ancient_chipset_type_summary">Mediatek™ Dimensity 1200</string>
-    <string name="ancient_gpu_summary">Mali-G77 MC9</string>
-    <string name="ancient_camera_mp_summary">64MP+8MP+2MP Back,16MP Front</string>
-    <string name="ancient_screen_type_summary">Super AMOLED, 120Hz, 1000 nits (peak)</string>
-
-    <!-- AncientOS About Maintainer Info -->
-    <string name="maintainer_name">Nishant Kumar</string>
 
 </resources>

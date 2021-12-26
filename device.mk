@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/realme/RMX3031
+DEVICE_PATH := device/oneplus/denniz
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -28,7 +28,7 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 30
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Call proprietary blob setup
-$(call inherit-product-if-exists, vendor/realme/RMX3031/RMX3031-vendor.mk)
+$(call inherit-product-if-exists, vendor/oneplus/denniz/denniz-vendor.mk)
 
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -61,7 +61,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.RMX3031 \
+    android.hardware.biometrics.fingerprint@2.3-service.denniz \
 	vendor.oplus.hardware.biometrics.fingerprint@2.1
 
 PRODUCT_COPY_FILES += \
@@ -95,7 +95,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.RMX3031
+    android.hardware.light@2.0-service.denniz
 
 # NFC
 #PRODUCT_SOONG_NAMESPACES += \
@@ -151,11 +151,6 @@ PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     RcsService \
     PresencePolling
-
-# RealmeParts
-PRODUCT_PACKAGES += \
-    RealmeParts \
-	parts.rc
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

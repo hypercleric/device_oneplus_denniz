@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.RMX3031"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.denniz"
 
 #include "BiometricsFingerprint.h"
 
@@ -24,7 +24,7 @@
 #include <fstream>
 #include <thread>
 
-#define FOD_STATUS_PATH "/sys/kernel/oppo_display/oppo_notify_fppress"
+#define FOD_STATUS_PATH "/sys/kernel/oplus_display/oplus_notify_fppress"
 #define STATUS_ON 1
 #define STATUS_OFF 0
 #define BIND(fn) [this](auto&&... args) -> decltype(auto) { return this->fn(std::forward<decltype(args)>(args)...); }

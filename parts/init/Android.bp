@@ -1,5 +1,0 @@
-prebuilt_etc {
-    name: "parts.rc",
-    src: "parts.rc",
-    sub_dir: "init",
-}
