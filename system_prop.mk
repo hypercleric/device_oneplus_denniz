@@ -9,6 +9,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
+    org.elixir.device=denniz
+
+# Fingerprint
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.realme.lockstate=0
 
 # GBoard
