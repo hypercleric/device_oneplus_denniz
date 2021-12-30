@@ -15,7 +15,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:sharedUserId="android.uid.system"
-    package="com.realmeparts"
+    package="com.oneplusparts"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -76,7 +76,7 @@
 
         <activity android:name=".DeviceSettings" />
 
-        <receiver android:name="com.realmeparts.Startup" 
+        <receiver android:name="com.oneplusparts.Startup" 
 		          android:exported="true">
             <intent-filter android:priority="100" >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -85,7 +85,7 @@
 
         <!-- Quick Settings Tiles -->
         <service
-            android:name="com.realmeparts.DCModeTileService"
+            android:name="com.oneplusparts.DCModeTileService"
             android:icon="@drawable/ic_dc_tile"
             android:label="@string/tile_dc_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
@@ -96,7 +96,7 @@
             </intent-filter>
         </service>
         <service
-            android:name="com.realmeparts.SRGBModeTileService"
+            android:name="com.oneplusparts.SRGBModeTileService"
             android:icon="@drawable/ic_srgb_tile"
             android:label="@string/tile_srgb_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
@@ -107,7 +107,7 @@
             </intent-filter>
         </service>
         <service
-            android:name="com.realmeparts.HBMModeTileService"
+            android:name="com.oneplusparts.HBMModeTileService"
             android:icon="@drawable/ic_hbm"
             android:label="@string/tile_hbm_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
@@ -118,7 +118,7 @@
             </intent-filter>
         </service>
 		<service
-            android:name="com.realmeparts.PerfProfileTileService"
+            android:name="com.oneplusparts.PerfProfileTileService"
             android:icon="@drawable/ic_perf_profile"
             android:label="@string/perf_profile_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
@@ -129,7 +129,7 @@
             </intent-filter>
         </service>
         <service
-            android:name="com.realmeparts.GameModeTileService"
+            android:name="com.oneplusparts.GameModeTileService"
             android:icon="@drawable/ic_game_tile"
             android:label="@string/tile_game_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
@@ -140,7 +140,7 @@
             </intent-filter>
         </service>
         <service
-            android:name="com.realmeparts.RefreshRateTileService"
+            android:name="com.oneplusparts.RefreshRateTileService"
             android:icon="@drawable/ic_refresh_tile_60"
             android:label="@string/tile_refresh_rate"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
@@ -152,7 +152,7 @@
         </service>
 		
         <service
-            android:name="com.realmeparts.OtgToggleService"
+            android:name="com.oneplusparts.OtgToggleService"
             android:icon="@drawable/ic_otg_tile"
             android:label="@string/tile_otg_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
@@ -163,7 +163,7 @@
             </intent-filter>
         </service>
         <service
-            android:name="com.realmeparts.CABCTileService"
+            android:name="com.oneplusparts.CABCTileService"
             android:icon="@drawable/ic_cabc"
             android:label="@string/cabc_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
@@ -175,7 +175,7 @@
         </service>
 		
 		<service
-            android:name="com.realmeparts.DT2WTileService"
+            android:name="com.oneplusparts.DT2WTileService"
             android:icon="@drawable/ic_dt2w"
             android:label="@string/dt2w_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
@@ -186,13 +186,13 @@
             </intent-filter>
         </service>
 		
-        <service android:name="com.realmeparts.SmartChargingService"
+        <service android:name="com.oneplusparts.SmartChargingService"
                 android:exported="false">
         </service>
-        <service android:name="com.realmeparts.HBMService"
+        <service android:name="com.oneplusparts.HBMService"
                 android:exported="false">
         </service>
-        <service android:name="com.realmeparts.doze.DozeService"
+        <service android:name="com.onepluspartss.doze.DozeService"
                 android:exported="false">
         </service>
     </application>

@@ -11,8 +11,8 @@
      limitations under the License.
 -->
 <resources>
-    <string name="device_title">Realme Settings</string>
-    <string name="device_summary">Adjust Realme specific device settings</string>
+    <string name="device_title">OnePlus Settings</string>
+    <string name="device_summary">Adjust OnePlus  specific device settings</string>
     <string name="display_title">Display</string>
     <string name="misc_title">Misc settings</string>
 
@@ -71,10 +71,10 @@
     <string name="tile_refresh_rate">Refresh Rate</string>
     <string name="refresh_rate_60_title">60Hz</string>
     <string name="refresh_rate_60_summary">Less smoothness but slightly extended battery life</string>
-    <string name="refresh_rate_120_title">120Hz</string>
-    <string name="refresh_rate_120_summary">Maximum smoothness with higher refresh rate but Apps&#47;Games can still limit to 60 FPS</string>
-    <string name="refresh_rate_120Forced_title">Smooth Display</string>
-    <string name="refresh_rate_120Forced_summary">Force display to 120Hz which improves touch responsiveness &amp; animation quality. Increases battery usage. </string>
+    <string name="refresh_rate_90_title">90Hz</string>
+    <string name="refresh_rate_90_summary">Maximum smoothness with higher refresh rate but Apps&#47;Games can still limit to 60 FPS</string>
+    <string name="refresh_rate_90Forced_title">Smooth Display</string>
+    <string name="refresh_rate_90Forced_summary">Force display to 90Hz which improves touch responsiveness &amp; animation quality. Increases battery usage. </string>
 	<!-- Vibration Strength -->
     <string name="vibration_strength_title">Vibration Strength</string>
     <string name="vibration_strength_low">Low</string>

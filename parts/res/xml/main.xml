@@ -21,7 +21,7 @@
             android:summary="@string/smart_charging_summary"
             android:title="@string/smart_charging_title" />
 
-        <com.realmeparts.SecureSettingListPreference
+        <com.oneplusparts.SecureSettingListPreference
             android:key="charging_speed"
             android:icon="@drawable/ic_charging_speed"
             android:title="Charging Speed"
@@ -31,7 +31,7 @@
             android:defaultValue="0"
             android:summary="%s" />
 
-        <com.realmeparts.SeekBarPreference
+        <com.oneplusparts.SeekBarPreference
             android:key="seek_bar"
             android:title="Select charging limit"
             android:layout="@layout/preference_slider"
@@ -52,7 +52,7 @@
 			android:key="perf"
 			android:title="@string/perf_title">
 
-			<com.realmeparts.SecureSettingListPreference
+			<com.oneplusparts.SecureSettingListPreference
             android:icon="@drawable/ic_perf_profile"
             android:key="perf_profile"
             android:dialogTitle="@string/perf_profile_title"
@@ -66,7 +66,7 @@
         android:key="graphics"
         android:title="@string/display_title">
 
-        <com.realmeparts.SecureSettingListPreference
+        <com.oneplusparts.SecureSettingListPreference
             android:icon="@drawable/ic_cabc"
             android:key="cabc"
             android:dialogTitle="@string/cabc_dialogTitle"
@@ -117,8 +117,8 @@
             android:title="@string/ambient_display_gestures_title"
             android:summary="@string/ambient_display_gestures_summary">
             <intent android:action="android.intent.action.MAIN"
-                 android:targetPackage="com.realmeparts"
-                 android:targetClass="com.realmeparts.doze.DozeSettingsActivity"/>
+                 android:targetPackage="com.oneplusparts"
+                 android:targetClass="com.oneplusparts.doze.DozeSettingsActivity"/>
         </Preference>
 
     </PreferenceCategory>
@@ -127,26 +127,26 @@
         android:key="refresh_rate"
         android:title="@string/refresh_title">
 
-        <com.realmeparts.RadioButtonPreference
+        <com.oneplusparts.RadioButtonPreference
             android:icon="@drawable/refresh_rate_60_icon"
             android:key="refresh_rate_60"
             android:checked="false"
             android:title="@string/refresh_rate_60_title"
             android:summary="@string/refresh_rate_60_summary" />
 
-        <com.realmeparts.RadioButtonPreference
-            android:icon="@drawable/refresh_rate_120_icon"
-            android:key="refresh_rate_120"
+        <com.oneplusparts.RadioButtonPreference
+            android:icon="@drawable/refresh_rate_90_icon"
+            android:key="refresh_rate_90"
             android:checked="true"
             android:enabled="true"
-            android:title="@string/refresh_rate_120_title"
-            android:summary="@string/refresh_rate_120_summary"  />
+            android:title="@string/refresh_rate_90_title"
+            android:summary="@string/refresh_rate_90_summary"  />
 
         <SwitchPreference
-            android:key="refresh_rate_120Forced"
-            android:icon="@drawable/refresh_rate_120forced_icon"
-            android:summary="@string/refresh_rate_120Forced_summary"
-            android:title="@string/refresh_rate_120Forced_title" />
+            android:key="refresh_rate_90Forced"
+            android:icon="@drawable/refresh_rate_90forced_icon"
+            android:summary="@string/refresh_rate_90Forced_summary"
+            android:title="@string/refresh_rate_90Forced_title" />
 
     </PreferenceCategory>
 
@@ -154,7 +154,7 @@
         android:key="misc"
         android:title="@string/misc_title">
 
-        <com.realmeparts.SecureSettingListPreference
+        <com.oneplusparts.SecureSettingListPreference
             android:key="vibration_strength"
             android:title="@string/vibration_strength_title"
             android:icon="@drawable/ic_vibration"
