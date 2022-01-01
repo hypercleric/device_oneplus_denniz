@@ -1,6 +1,6 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="id.my.realme.mtkims_telephony"
+    package="id.my.oneplus.mtkims_telephony"
     android:versionCode="1"
     android:versionName="1.0">
     <overlay android:isStatic="true" android:targetPackage="com.android.phone" android:priority="97" />
