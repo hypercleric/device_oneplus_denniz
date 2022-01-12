@@ -379,7 +379,7 @@
     </string-array>
 
     <!-- The default peak refresh rate for a given device. -->
-    <integer name="config_defaultPeakRefreshRate">120</integer>
+    <integer name="config_defaultPeakRefreshRate">90</integer>
 
     <!-- Not allow to switch to higher refresh rate when (display, ambient) brightness falls into
          the region defined by the two arrays -->
@@ -395,7 +395,7 @@
     <integer name="config_defaultRefreshRate">0</integer>
 
     <!-- default refresh rate in the zone defined by brightness and ambient thresholds -->
-    <integer name="config_defaultRefreshRateInZone">120</integer>
+    <integer name="config_defaultRefreshRateInZone">90</integer>
 
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
@@ -424,7 +424,7 @@
     <bool name="config_cleanupUnusedFingerprints">false</bool>
 	
     <!-- Smart charging -->
-    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/mmi_charging_enable</string>
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/devices/virtual/oplus_chg/battery/mmi_charging_enable</string>
     <string name="config_SmartChargingSuspendValue" translatable="false">0</string>
     <string name="config_SmartChargingResumeValue" translatable="false">1</string>
 
@@ -438,7 +438,7 @@
     <bool name="config_enableSmartPixels">true</bool>
 
 	<!-- Path to fast charging status file to detect whether an oem fast charger is active -->
-    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/battery/fastcharger</string>
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/devices/virtual/oplus_chg/battery/fast_charge</string>
 
 	<!-- Expected value from fast charging status file  -->
     <string name="config_oemFastChargerStatusValue" translatable="false">1</string>
