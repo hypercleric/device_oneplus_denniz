@@ -23,5 +23,8 @@
 
     <!-- Whether to show Smooth Display feature in Settings Options -->
     <bool name="config_show_smooth_display">true</bool>
+	
+	    <!-- AncientOS About Maintainer Info -->
+    <string name="maintainer_name">hypercleric</string>
 
 </resources>
